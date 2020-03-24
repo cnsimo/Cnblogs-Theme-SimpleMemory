@@ -718,7 +718,7 @@ function Base() {
         timeIds.setCnzzTId = window.setInterval( setCnzz, 1000 );
 
         // 设置主题信息
-        footerBox.append('<div id="themeInfo"></div>');
+        //footerBox.append('<div id="themeInfo"></div>');
         setTheme();
 
         // 设置页脚样式
@@ -793,7 +793,7 @@ function Base() {
             //$('#themeInfo').remove();
             $('.footer-t1').css('cssText', 'min-height:100px!important');
             var footer = $('#footer');
-            var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Author：<a href="https://www.cnblogs.com/bndong/" target="_blank" style="color:#444;">BNDong</a> -</p></div>';
+            var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;text-align:center;">- Theme Author：<a href="https://www.cnblogs.com/bndong/" target="_blank" style="color:#444;">BNDong</a> -</p></div>';
             if ($('#ThemeAuthors').length == 0) {
                 $('#footer').append(themeHtml);
             } else {
