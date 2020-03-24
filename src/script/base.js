@@ -789,13 +789,16 @@ function Base() {
 
         // 设置加载主题信息
         function setTheme() {
-            $('#themeInfo').html('Theme version: <a href="'+lHref
-                +'" target="_blank" style="color: #888;text-decoration: underline;">'
-                +(window.cnblogsConfig.CnVersions).substring(0,7)+'</a>'
-                +' / Loading theme version: <a href="'+rHref
-                +'" target="_blank" style="color: #888;text-decoration: underline;">'
-                +(window.cnblogsConfig.GhVersions).substring(0,7)+'</a>'
-            );
+            // 添加的自定义样式，恢复到旧版本footer
+            //$('#themeInfo').remove();
+            $('.footer-t1').css('cssText', 'min-height:100px!important');
+            var footer = $('#footer');
+            var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Author：<a href="https://www.cnblogs.com/bndong/" target="_blank" style="color:#444;">BNDong</a> -</p></div>';
+            if ($('#ThemeAuthors').length == 0) {
+                $('#footer').append(themeHtml);
+            } else {
+                $('#ThemeAuthors').show().css('visibility', 'visible');
+            }
         }
     };
 
