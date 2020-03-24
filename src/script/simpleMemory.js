@@ -95,6 +95,7 @@ if (initCheck()) {
         GhRepositories: 'Cnblogs-Theme-SimpleMemory',
         GhVersions: 'v1.2.3',
         CnVersions: "",
+        homeTitle: "天上人间",
         blogUser: "",
         blogAvatar: "",
         blogStartDate: "2019-01-01",
