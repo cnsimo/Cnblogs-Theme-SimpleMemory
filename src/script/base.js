@@ -94,7 +94,7 @@ function Base() {
         $(window).resize( function() { bndongJs.resizeMonitor(); });
 
         // 设置名称
-        $('#homeTopTitle').text(window.cnblogsConfig.blogUser);
+        $('#homeTopTitle').text(window.cnblogsConfig.homeTitle);
 
         // 初始化菜单滚动条样式
         $('#menuWrap').optiscroll({ forceScrollbars: true, maxTrackSize: 20, preventParentScroll: true });
